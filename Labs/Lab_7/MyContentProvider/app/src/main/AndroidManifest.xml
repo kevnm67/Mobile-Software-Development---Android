@@ -20,6 +20,9 @@
             android:name=".StudentsProvider"
             android:label="@string/title_activity_students_provider" >
         </activity>
+        <provider android:name="StudentsProvider"
+            android:authorities="com.kevinmorton.provider.College">
+    </provider>
     </application>
 
 </manifest>

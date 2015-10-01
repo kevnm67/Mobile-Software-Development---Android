@@ -1,6 +1,7 @@
 package kevinmorton.com.mycontentprovider;
 
 import java.util.HashMap;
+
 import android.content.ContentProvider;
 import android.content.ContentUris;
 import android.content.ContentValues;
@@ -16,7 +17,7 @@ import android.text.TextUtils;
 
 public class StudentsProvider extends ContentProvider {
 
-    static final String PROVIDER_NAME = "com.kevinmorton.mycontentprovider";
+    static final String PROVIDER_NAME = "com.kevinmorton.provider.College";
     static final String URL = "content://" + PROVIDER_NAME + "/students";
     static final Uri CONTENT_URI = Uri.parse(URL);
     static final String _ID = "_id";

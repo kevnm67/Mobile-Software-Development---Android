@@ -45,9 +45,9 @@ public class MainActivity extends AppCompatActivity {
         //add new student record
         ContentValues values = new ContentValues();
         values.put(StudentsProvider.NAME,
-                ((EditText)findViewById(R.id.txtName)).getText().toString());
+                ((EditText) findViewById(R.id.txtName)).getText().toString());
         values.put(StudentsProvider.GRADE,
-                ((EditText)findViewById(R.id.txtGrade)).getText().toString());
+                ((EditText) findViewById(R.id.txtGrade)).getText().toString());
         Uri uri = getContentResolver().insert(
                 StudentsProvider.CONTENT_URI, values);
         Toast.makeText(getBaseContext(),
