@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
     public void onClickRetrieveStudents(View view) {
 
         // Retrieve student records
-        String URL = "content://com.example.provider.College/students";
+        String URL = "content://com.kevinmorton.provider.College/students";
         Uri students = Uri.parse(URL);
         Cursor c = managedQuery(students, null, null, null, "name");
 

@@ -14,12 +14,9 @@ import android.database.sqlite.SQLiteQueryBuilder;
 import android.net.Uri;
 import android.text.TextUtils;
 
-
-import java.util.HashMap;
-
 public class StudentsProvider extends ContentProvider {
 
-    static final String PROVIDER_NAME = "com.example.provider.College";
+    static final String PROVIDER_NAME = "com.kevinmorton.mycontentprovider";
     static final String URL = "content://" + PROVIDER_NAME + "/students";
     static final Uri CONTENT_URI = Uri.parse(URL);
     static final String _ID = "_id";
@@ -157,9 +154,9 @@ public class StudentsProvider extends ContentProvider {
     public String getType(Uri uri) {
         switch (uriMatcher.match(uri)) {
             case STUDENTS:
-                return "vnd.android.cursor.dir/vnd.example.students";
+                return "vnd.android.cursor.dir/vnd.kevinmorton.students";
             case STUDENT_ID:
-                return "vnd.android.cursor.item/vnd.example.students";
+                return "vnd.android.cursor.item/vnd.kevinmorton.students";
             default:
                 throw new IllegalArgumentException("Unsupported URI: " + uri);
         }
