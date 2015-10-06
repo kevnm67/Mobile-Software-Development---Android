@@ -9,6 +9,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
         <activity
+
+            android:name=".SMSActivity"
+
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+        <activity
+
+            android:name=".InternetActivity"
+
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+
+        <activity
             android:name=".PermissionActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" >
@@ -19,5 +32,6 @@
             </intent-filter>
         </activity>
     </application>
-
+    <uses-permission android:name="android.permission.SEND_SMS"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>
