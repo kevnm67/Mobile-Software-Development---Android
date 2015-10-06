@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:weightSum="1">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To: "
+            android:textAppearance="?android:attr/textAppearanceLarge"></TextView>
+
+        <EditText
+            android:id="@+id/addr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="phone">
+
+            <requestFocus></requestFocus>
+        </EditText>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="11dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"></TextView>
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.59"></MultiAutoCompleteTextView>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.06"
+        android:textAppearance="?android:attr/textAppearanceLarge"></TextView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.16"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:textAppearance="?android:attr/textAppearanceLarge"></TextView>
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_weight="0.29"
+            android:text="SEND"></Button>
+    </LinearLayout>
+</LinearLayout>
