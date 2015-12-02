@@ -8,6 +8,11 @@ import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 
+
+// The code developed is from following the tutorial found at the following link:
+// http://lyndonarmitage.com/making-tic-tac-toe-in-android/
+
+
 public class MainActivity extends Activity {
 
     //--------| Game state variables |------------//
@@ -89,7 +94,8 @@ public class MainActivity extends Activity {
     }
 
     /**
-     * Algorithm checking if specific player won the game.
+     * Algorithm used to determine the winnner.
+     * Source: http://lyndonarmitage.com/making-tic-tac-toe-in-android/
      *
      * @param board  the tic tac toe board
      * @param size   width and height of the board
