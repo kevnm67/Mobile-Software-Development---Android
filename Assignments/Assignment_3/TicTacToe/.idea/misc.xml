@@ -27,6 +27,9 @@
       </value>
     </option>
   </component>
+  <component name="ProjectDictionaryState">
+    <dictionary name="KevinMortonMacPro" />
+  </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
       <profile-state>
@@ -37,10 +40,13 @@
           <State>
             <id>Android Lint</id>
           </State>
+          <State>
+            <id>Spelling</id>
+          </State>
         </expanded-state>
         <selected-state>
           <State>
-            <id>Android</id>
+            <id>SpellCheckingInspection</id>
           </State>
         </selected-state>
       </profile-state>
@@ -64,6 +70,18 @@
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ScopeChooserConfigurable.UI">
         <settings>
           <splitter-proportions>
